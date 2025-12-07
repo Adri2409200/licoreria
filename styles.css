@@ -424,7 +424,6 @@ hr {
     right: 10px;
     opacity: 1;
 }
-
 #btnOfertaWhisky:hover,
 #btnDescuento:hover {
     transform: translateY(-3px) scale(1.05);
