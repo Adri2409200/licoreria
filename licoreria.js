@@ -10,7 +10,6 @@ const productos = [
 let carrito = [];
 let total = 0;
 let descuentoAplicado = false;
-
 document.addEventListener('DOMContentLoaded', function() {
     cargarProductos();
     actualizarCarrito();
