@@ -1,0 +1,86 @@
+[1mdiff --git a/index.html b/index.html[m
+[1mindex b95ae84..759e91c 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -18,7 +18,7 @@[m
+     <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍷</text></svg>">[m
+ </head>[m
+ <body>[m
+[31m-    <!-- Navbar Bootstrap   -->[m
+[32m+[m[32m    <!-- Navbar Bootstrap -->[m
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">[m
+         <div class="container">[m
+             <a class="navbar-brand fw-bold d-flex align-items-center" href="#">[m
+[36m@@ -29,6 +29,7 @@[m
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLicor">[m
+                 <span class="navbar-toggler-icon"></span>[m
+             </button>[m
+[32m+[m[41m            [m
+             <div class="collapse navbar-collapse" id="navbarLicor">[m
+                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">[m
+                     <li class="nav-item">[m
+[36m@@ -52,7 +53,7 @@[m
+         </div>[m
+     </nav>[m
+ [m
+[31m-    <!-- Carrusel -->[m
+[32m+[m[32m    <!-- Hero Section - Carrusel -->[m
+     <section id="inicio" class="carousel slide" data-bs-ride="carousel">[m
+         <div class="carousel-inner">[m
+             <!-- Slide 1 -->[m
+[36m@@ -129,6 +130,7 @@[m
+             <span class="visually-hidden">Siguiente</span>[m
+         </button>[m
+     </section>[m
+[32m+[m
+     <!-- Productos Section -->[m
+     <section id="productos" class="py-5 bg-light">[m
+         <div class="container">[m
+[36m@@ -156,6 +158,7 @@[m
+                     <i class="bi bi-snow me-2"></i> Vodka[m
+                 </button>[m
+             </div>[m
+[32m+[m[41m            [m
+             <div class="row g-4" id="productosGrid">[m
+                 <div class="col-12 text-center">[m
+                     <div class="spinner-border text-primary" role="status">[m
+[36m@@ -164,6 +167,7 @@[m
+                     <p class="mt-2 text-muted">Cargando productos...</p>[m
+                 </div>[m
+             </div>[m
+[32m+[m[41m            [m
+             <!-- Info adicional -->[m
+             <div class="row mt-5 pt-4 border-top">[m
+                 <div class="col-md-4 text-center mb-4">[m
+[1mdiff --git a/licoreria.js b/licoreria.js[m
+[1mindex b8eec6f..7e7e395 100644[m
+[1m--- a/licoreria.js[m
+[1m+++ b/licoreria.js[m
+[36m@@ -10,6 +10,7 @@[m [mconst productos = [[m
+ let carrito = [];[m
+ let total = 0;[m
+ let descuentoAplicado = false;[m
+[32m+[m
+ document.addEventListener('DOMContentLoaded', function() {[m
+     cargarProductos();[m
+     actualizarCarrito();[m
+[1mdiff --git a/styles.css b/styles.css[m
+[1mindex 320cdd8..b7fb3d5 100644[m
+[1m--- a/styles.css[m
+[1m+++ b/styles.css[m
+[36m@@ -424,6 +424,7 @@[m [mhr {[m
+     right: 10px;[m
+     opacity: 1;[m
+ }[m
+[32m+[m
+ #btnOfertaWhisky:hover,[m
+ #btnDescuento:hover {[m
+     transform: translateY(-3px) scale(1.05);[m
+[36m@@ -459,5 +460,4 @@[m [mhr {[m
+                 var(--licor-secondary) 50%, [m
+                 var(--licor-accent) 100%);[m
+     border-radius: 2px;[m
+[31m-}[m
+[31m-[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
